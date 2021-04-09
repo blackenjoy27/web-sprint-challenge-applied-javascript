@@ -44,6 +44,10 @@ const Card = (article) => {
 
   divAuthor.appendChild(divImg); divAuthor.appendChild(spanAuthorName);
 
+  divCard.addEventListener("click",e=>{
+    console.log(article.headline);
+  })
+
   return divCard;
 }
 
