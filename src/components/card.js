@@ -71,6 +71,9 @@ const cardAppender = (selector) => {
     addCards(res.data.articles.node);
     addCards(res.data.articles.technology);
   })
+  .catch(e=>{
+    console.log("Something is wrong");
+  })
 }
 
 export { Card, cardAppender }
